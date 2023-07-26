@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include chatting *.css
+recursive-include chatting *.csv
+recursive-include chatting *.html
+recursive-include chatting *.ico
+recursive-include chatting *.js
+recursive-include chatting *.json
+recursive-include chatting *.md
+recursive-include chatting *.png
+recursive-include chatting *.py
+recursive-include chatting *.svg
+recursive-include chatting *.txt
+recursive-exclude chatting *.pyc
