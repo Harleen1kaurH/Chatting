@@ -1,0 +1,72 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-07-26 12:41:50.241159",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enable_chat",
+  "start_time",
+  "end_time",
+  "chatting_operators",
+  "allowed_roles"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enable_chat",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Enable Chat",
+   "reqd": 1
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End Time"
+  },
+  {
+   "fieldname": "allowed_roles",
+   "fieldtype": "Table",
+   "label": "Allowed Roles",
+   "options": "Has Role"
+  },
+  {
+   "fieldname": "chatting_operators",
+   "fieldtype": "Table MultiSelect",
+   "label": "Chatting Operators",
+   "options": "Chatting Room User"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-07-27 23:56:07.550726",
+ "modified_by": "Administrator",
+ "module": "Chatting",
+ "name": "Chatting Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

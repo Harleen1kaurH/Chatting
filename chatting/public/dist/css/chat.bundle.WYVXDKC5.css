@@ -1,0 +1,394 @@
+/* ../../../../../tmp/tmp-10483-ndkiVFVjj8bV/chatting/chatting/public/scss/chatting.bundle.css */
+.chatting-app {
+  position: fixed;
+  bottom: 24px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  max-width: 385px;
+  z-index: 1030;
+  padding: 0 1rem;
+}
+.chatting-app ::-webkit-scrollbar {
+  width: 2px;
+}
+.chatting-app ::-webkit-scrollbar-track {
+  background: var(--card-bg);
+}
+.chatting-app ::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-color);
+  border-radius: 10px;
+  max-height: 30px;
+}
+.chatting-app ::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-500);
+}
+.chatting-element {
+  height: 582px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 2px 6px rgba(17, 43, 66, 0.08), 0px 1px 4px rgba(17, 43, 66, 0.1);
+  background: var(--card-bg);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--dark-border-color);
+}
+.chatting-container {
+  padding: 0;
+  margin: 0;
+}
+.chatting-bubble {
+  cursor: pointer;
+  background: var(--primary-color);
+  color: var(--white);
+  border-radius: 100px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  width: initial;
+}
+.chatting-bubble svg {
+  fill: var(--white);
+}
+.chatting-bubble:hover {
+  box-shadow: var(--shadow-lg);
+}
+.chatting-bubble .chatting-message-icon {
+  margin-right: var(--margin-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatting-cross-button {
+  display: none;
+  color: var(--gray-700);
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  right: 8px;
+}
+.chatting-bubble-closed {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  text-align: center;
+}
+.chatting-bubble-closed .cross-icon {
+  width: 100%;
+}
+.chatting-list .chatting-list-header {
+  padding: 12px 12px 0 12px;
+  justify-content: space-between;
+  display: flex;
+}
+.chatting-list .chatting-list-header .chatting-list-icons {
+  display: flex;
+}
+.chatting-list .chatting-list-header .chatting-list-icons .user-settings {
+  cursor: pointer;
+  margin-right: 0px;
+  margin-top: 1px;
+}
+.chatting-list .chatting-list-header .chatting-list-icons .add-room {
+  cursor: pointer;
+  margin-right: 11px;
+  margin-top: 1px;
+}
+.chatting-list .chatting-search {
+  border-radius: 6px;
+  font-size: 0.875rem;
+  margin: 0 12px;
+}
+.chatting-list .chatting-search .search-icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  padding-right: 10px;
+  height: 100%;
+  margin-left: 12px;
+  z-index: 3;
+}
+.chatting-list .chatting-search .chatting-search-box {
+  width: 100%;
+  border-radius: 6px;
+  padding-left: 36px;
+}
+.chatting-list .chatting-search .chatting-search-box:focus {
+  box-shadow: none;
+}
+.chatting-list .chatting-rooms-container {
+  height: 490.5px;
+  overflow-y: scroll;
+  padding: 12px;
+}
+.chatting-list .chatting-rooms-container .chatting-room {
+  display: flex;
+  font-size: 0.875rem;
+  cursor: pointer;
+  position: relative;
+  padding: 10px 0;
+  border-radius: 8px;
+}
+.chatting-list .chatting-rooms-container .chatting-room:hover {
+  background: var(--bg-light-gray);
+  border-left: 5px solid var(--bg-light-gray);
+  border-right: 5px solid var(--bg-light-gray);
+  margin: 0 -5px;
+}
+.chatting-list .chatting-rooms-container .chatting-room .chatting-profile-info {
+  margin-left: var(--margin-md);
+  margin-right: auto;
+}
+.chatting-list .chatting-rooms-container .chatting-room .chatting-profile-info .chatting-name {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.chatting-list .chatting-rooms-container .chatting-room .chatting-date {
+  color: var(--text-muted);
+}
+.chatting-list .chatting-rooms-container .chatting-room .chatting-latest {
+  width: 4px;
+  height: 4px;
+  margin-left: 5px;
+  background: var(--blue-500);
+  border-radius: 50%;
+}
+.chatting-header {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.06), 0px 2px 0.5px -1px rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid var(--dark-border-color);
+}
+.chatting-header .chatting-back-button {
+  height: 28px;
+  width: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: var(--bg-color);
+  margin-right: 10px;
+  cursor: pointer;
+}
+.chatting-header .chatting-profile-info {
+  margin-left: var(--margin-md);
+  font-size: 0.875rem;
+  margin-right: auto;
+}
+.chatting-header .chatting-profile-info .chatting-profile-name {
+  color: var(--text-color);
+  font-weight: 600;
+}
+.chatting-header .chatting-profile-info .chatting-profile-status {
+  font-size: 0.75rem;
+  visibility: hidden;
+}
+.chatting-header .online-circle {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  margin-left: 3px;
+  background: var(--green);
+}
+.chatting-space {
+  height: 100%;
+}
+.chatting-space .chatting-space-container {
+  padding: 12px;
+  overflow-wrap: break-word;
+  height: 475.5px;
+  overflow-y: scroll;
+}
+.chatting-space .chatting-space-container .chatting-image {
+  border-radius: 13px 13px 0px 13px;
+}
+.chatting-space .chatting-space-container .message-name {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.chatting-space .chatting-space-container .sender-message {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+.chatting-space .chatting-space-container .sender-message .message-bubble {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 8px;
+  font-size: 0.875rem;
+  border-radius: 13px 13px 13px 0px;
+  max-width: 78%;
+}
+.chatting-space .chatting-space-container .recipient-message {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.chatting-space .chatting-space-container .recipient-message .message-bubble {
+  background: var(--control-bg);
+  color: var(--text-color);
+  padding: 8px;
+  font-size: 0.875rem;
+  border-radius: 13px 13px 0px 13px;
+  max-width: 78%;
+}
+.chatting-space .chatting-space-container .message-time {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+.chatting-space .chatting-space-container .date-line {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid var(--gray-400);
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+.chatting-space .chatting-space-container .date-line span {
+  background: var(--card-bg);
+  padding: 0 8px;
+  font-size: 0.875rem;
+}
+.chatting-space .chatting-space-actions {
+  padding: 3px 12px 12px 12px;
+  display: flex;
+  align-items: center;
+}
+.chatting-space .chatting-space-actions .open-attach-items {
+  cursor: pointer;
+}
+.chatting-space .chatting-space-actions .type-message {
+  margin: 0 10px;
+  border-radius: 100px;
+  font-size: 0.875rem;
+}
+.chatting-space .chatting-space-actions .message-send-button {
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background: var(--blue-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatting-space .chatting-space-actions .message-send-button svg {
+  fill: var(--white);
+}
+.chatting-form .chatting-form-container {
+  padding: 12px;
+}
+.chatting-form .chatting-form-container .chatting-query-heading {
+  font-size: 0.875rem;
+  color: var(--gray-800);
+}
+.chatting-form .chatting-form-container button {
+  font-size: 1rem;
+}
+.chatting-form .chatting-form-container .form-label {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+.chatting-form .chatting-form-container #chatting-message-area {
+  resize: none;
+}
+.chatting-welcome .chatting-welcome-header {
+  padding: var(--padding-lg);
+}
+.chatting-welcome .chatting-welcome-header .hero-icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background: var(--blue-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--margin-md);
+}
+.chatting-welcome .chatting-welcome-header .hero-icon svg {
+  fill: var(--white);
+}
+.chatting-welcome .chatting-welcome-header h3 {
+  font-size: 2.25rem;
+  font-weight: normal;
+  margin-bottom: var(--margin-md);
+}
+.chatting-welcome .chatting-welcome-header p {
+  font-size: 1.125rem;
+}
+.chatting-welcome .chatting-welcome-footer {
+  position: absolute;
+  padding: 190px var(--padding-md) 0px var(--padding-md);
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--cyan-100);
+}
+.chatting-welcome .chatting-welcome-footer .status-content {
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+.chatting-welcome .chatting-welcome-footer .hero-content {
+  width: 100%;
+  font-size: 0.75rem;
+}
+.chatting-welcome .chatting-welcome-footer button {
+  margin-bottom: var(--margin-md);
+  font-size: 1rem;
+}
+.chatting-welcome .chatting-welcome-footer .welcome-footer {
+  position: initial;
+  margin-bottom: var(--margin-sm);
+}
+.chatting-footer {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 8px;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: var(--gray-600);
+}
+.chatting-footer:hover {
+  text-decoration: none;
+}
+@media (max-width: 576px) {
+  .chatting-app {
+    max-width: 100%;
+    bottom: 1rem;
+  }
+  .chatting-bubble-closed {
+    display: none;
+  }
+  .chatting-cross-button {
+    display: block;
+  }
+  .chatting-list .chatting-list-header .chatting-list-icons {
+    margin-right: var(--margin-xl);
+  }
+}
+.chatting-navbar-icon {
+  cursor: pointer;
+}
+.chatting-navbar-icon .badge {
+  background: var(--red-avatar-color);
+  color: var(--bg-color);
+  position: relative;
+  top: -10px;
+  left: -10px;
+  border-radius: 50%;
+  font-size: 9px;
+  border: 1px solid var(--red-avatar-color);
+}
+/*# sourceMappingURL=chatting.bundle.WYVXDKC5.css.map */

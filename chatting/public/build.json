@@ -1,0 +1,4 @@
+{
+  "js/chatting.js": ["public/js/chatting.bundle.js"],
+  "css/chatting.css": ["public/scss/chatting.bundle.scss"]
+}
