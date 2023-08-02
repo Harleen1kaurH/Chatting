@@ -4,4 +4,7 @@
 *.swp
 tags
 chatting/docs/current
-node_modules/
+node_modulest /
+git restore --staged **/*~
+git add .gitignore
+
